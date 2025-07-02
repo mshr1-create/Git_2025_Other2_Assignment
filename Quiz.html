@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-	    <meta charset="UTF-8">
-	    <title>Quiz</title>
-	</head>
-	<body>
-		<script src="Quiz.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>確認用ソフトウェア</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .question {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+    fieldset {
+      border: none;
+      padding: 0;
+      margin-bottom: 1.5em;
+    }
+    legend {
+      display: none;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 0.5em;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .options input[type="radio"] {
+      margin-right: 0.5em;
+    }
+    .btn-submit {
+      padding: 0.6em 1.2em;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="#" method="post">
+      <p class="question">
+        システム開発の早い段階で、目に見える形で利用者の要求が確認できるように確認用のソフトウェアを作成するソフトウェア開発モデルとして、最も適切なものはどれか。
+      </p>
+      <fieldset>
+        <!-- legendは視覚的には隠していますが、アクセシビリティ向上のため残しています -->
+        <legend>ソフトウェア開発モデルの選択</legend>
+        <div class="options">
+          <label>
+            <input type="radio" name="model" value="agile" />
+            アジャイル
+          </label>
+          <label>
+            <input type="radio" name="model" value="waterfall" />
+            ウォーターフォール
+          </label>
+          <label>
+            <input type="radio" name="model" value="spiral" />
+            スパイラル
+          </label>
+          <label>
+            <input type="radio" name="model" value="prototyping" />
+            プロトタイピング
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn-submit">解答する</button>
+    </form>
+  </div>
+</body>
 </html>
